@@ -50,3 +50,53 @@
     border-color: #1a73e8;
     box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.25);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-section {
+        margin-top: 60px;
+        padding: 2rem 0;
+    }
+
+    .room-card .card-img-top {
+        height: 180px;
+    }
+
+    .room-features .badge {
+        padding: 6px 10px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .room-card .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-section form .row > div {
+        margin-bottom: 1rem;
+    }
+
+    .dropdown {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .dropdown button {
+        width: 100%;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pagination .page-item {
+        margin: 2px;
+    }
+}

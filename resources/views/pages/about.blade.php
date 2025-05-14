@@ -12,9 +12,6 @@
                     <h1 class="display-4 fw-bold mb-4">About RoomRush</h1>
                     <p class="lead mb-4">RoomRush is a web-based booking platform designed to modernize student housing searches in Alaminos City, Pangasinan. Developed as an academic entrepreneurship project by students from [Your University], our solution addresses the critical need for an organized, transparent, and efficient system connecting students with verified boarding house accommodations.</p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('images/about-hero.jpg') }}" alt="About RoomRush" class="img-fluid rounded-3 shadow">
-                </div>
             </div>
         </div>
     </section>
@@ -82,9 +79,8 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="text-center">
-                        <div class="value-icon mb-3">
-                            <i class="fas fa-innovation text-primary fa-3x"></i>
+                    <div class="text-center">                        <div class="value-icon mb-3">
+                            <i class="fas fa-lightbulb text-primary fa-3x"></i>
                         </div>
                         <h4>Innovation</h4>
                         <p class="text-muted">Continuously improving our platform and services</p>
@@ -100,8 +96,7 @@
             <h2 class="text-center mb-5">Our Team</h2>            <div class="row g-4 justify-content-center">
                 <div class="col-md-3">
                     <div class="card team-card border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <img src="{{ asset('images/team1.jpg') }}" alt="Marven M. Rosal" class="rounded-circle mb-3" width="120">
+                        <div class="card-body text-center p-4">                            <img src="{{ asset('images/marven.png') }}" alt="Marven M. Rosal" class="rounded-circle mb-3 team-img">
                             <h4>Marven M. Rosal</h4>
                             <p class="text-muted">Founder & CEO</p>
                             <p class="small">Leading the vision and strategy of RoomRush, bringing innovative solutions to student housing challenges.</p>
@@ -110,8 +105,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card team-card border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <img src="{{ asset('images/team2.jpg') }}" alt="Christian Rey C. Caasi" class="rounded-circle mb-3" width="120">
+                        <div class="card-body text-center p-4">                            <img src="{{ asset('images/rey.png') }}" alt="Christian Rey C. Caasi" class="rounded-circle mb-3 team-img">
                             <h4>Christian Rey C. Caasi</h4>
                             <p class="text-muted">CTO</p>
                             <p class="small">Driving technological innovation and platform development to ensure a seamless user experience.</p>
@@ -120,8 +114,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card team-card border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <img src="{{ asset('images/team3.jpg') }}" alt="Kristine Joy C. Mallanao" class="rounded-circle mb-3" width="120">
+                        <div class="card-body text-center p-4">                            <img src="{{ asset('images/joy.png') }}" alt="Kristine Joy C. Mallanao" class="rounded-circle mb-3 team-img">
                             <h4>Kristine Joy C. Mallanao</h4>
                             <p class="text-muted">COO</p>
                             <p class="small">Overseeing daily operations and ensuring smooth coordination between landlords and students.</p>
@@ -130,8 +123,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card team-card border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <img src="{{ asset('images/team4.jpg') }}" alt="Polinne Mari M. Rabina" class="rounded-circle mb-3" width="120">
+                        <div class="card-body text-center p-4">                            <img src="{{ asset('images/polinne.png') }}" alt="Polinne Mari M. Rabina" class="rounded-circle mb-3 team-img">
                             <h4>Polinne Mari M. Rabina</h4>
                             <p class="text-muted">Chief Marketing Officer</p>
                             <p class="small">Leading our marketing initiatives and building strong relationships with the PSU-ACC community.</p>

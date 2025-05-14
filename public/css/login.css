@@ -57,3 +57,50 @@
         .back-to-home:hover {
             color: #e1e1e1;
         }
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .card {
+        margin: 1rem;
+    }
+    
+    .brand-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .form-control {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .btn-login {
+        padding: 0.6rem;
+    }
+    
+    h4 {
+        font-size: 1.4rem;
+    }
+    
+    .back-to-home {
+        top: 10px;
+        left: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .login-container {
+        padding: 2rem 0;
+    }
+    
+    .brand-logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+}
