@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Welcome to Your Home Away From Home</h1>
+                    <h1 class="display-4 fw-bold mb-4">Welcome to RoomRush</h1>
                     <p class="lead mb-4">Experience comfortable and affordable boarding houses that feel just like home.</p>
                     <a href="{{ route('rooms') }}" class="btn btn-primary btn-lg">Browse Rooms</a>
                 </div>

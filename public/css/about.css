@@ -1,0 +1,40 @@
+.about-hero {
+    margin-top: 80px;
+    background-color: #f8f9fa;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(26, 115, 232, 0.1);
+    border-radius: 50%;
+}
+
+.team-card {
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    border: 5px solid rgba(26, 115, 232, 0.1);
+}
+
+.contact-info {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    transition: transform 0.3s;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
