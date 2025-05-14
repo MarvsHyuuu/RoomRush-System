@@ -1,0 +1,29 @@
+ .sidebar {
+            min-height: 100vh;
+            background: #1a73e8;
+            color: white;
+        }
+        .sidebar .nav-link {
+            color: rgba(255,255,255,.8);
+            padding: 1rem 1.5rem;
+        }
+        .sidebar .nav-link:hover {
+            color: white;
+            background: rgba(255,255,255,.1);
+        }
+        .sidebar .nav-link.active {
+            background: rgba(255,255,255,.2);
+            color: white;
+        }
+        .main-content {
+            min-height: 100vh;
+            background: #f8f9fa;
+        }
+        .stat-card {
+            border-radius: 15px;
+            border: none;
+            transition: transform 0.3s;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }

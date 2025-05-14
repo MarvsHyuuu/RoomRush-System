@@ -1,0 +1,59 @@
+.login-container {
+            min-height: 100vh;
+            background: linear-gradient(rgba(26, 115, 232, 0.9), rgba(66, 133, 244, 0.9)), 
+                        url('../images/bg-login.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border: none;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .brand-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1.5rem;
+        }
+        .form-control {
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            border: 1px solid #e1e1e1;
+        }
+        .form-control:focus {
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+            border-color: #1a73e8;
+        }
+        .btn-login {
+            border-radius: 10px;
+            padding: 0.75rem;
+            font-weight: 600;
+            background: #1a73e8;
+            border: none;
+            transition: all 0.3s;
+        }
+        .btn-login:hover {
+            background: #1557b0;
+            transform: translateY(-2px);
+        }
+        .input-group-text {
+            background: transparent;
+            border-right: none;
+        }
+        .form-control {
+            border-left: none;
+        }
+        .back-to-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-to-home:hover {
+            color: #e1e1e1;
+        }
