@@ -41,6 +41,8 @@ Route::group(['middleware' => 'web'], function () {
         return view('pages.rooms');
     })->name('rooms');
 
+    Route::get('/rooms/{id}', [App\Http\Controllers\RoomController::class, 'show'])->name('room.details');
+
     Route::get('/about', function () {
         return view('pages.about');
     })->name('about');

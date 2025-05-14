@@ -1,8 +1,7 @@
 
 <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="{{ route('home') }}">
-            <span class="brand-text">RoomRush</span>
+    <div class="container">        <a class="navbar-brand fw-bold" href="{{ route('home') }}">
+            <img src="{{ asset('images/RoomRush Logo.png') }}" alt="RoomRush" height="40">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>

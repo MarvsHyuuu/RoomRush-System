@@ -1,9 +1,8 @@
 
 <footer class="bg-dark text-light py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h5>RoomRush</h5>
+        <div class="row">            <div class="col-lg-4">
+                <img src="{{ asset('images/RoomRush Logo.png') }}" alt="RoomRush" class="img-fluid mb-3" style="max-width: 150px;">
                 <p>Find your perfect boarding house with ease.</p>
             </div>
             <div class="col-lg-4">

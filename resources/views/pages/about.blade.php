@@ -3,14 +3,14 @@
 
 @section('title', 'About Us - RoomRush')
 
-@section('content')
-    <!-- Hero Section -->
+@section('content')    <!-- Hero Section -->
     <section class="about-hero py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
+                    <img src="{{ asset('images/RoomRush Logo.png') }}" alt="RoomRush Logo" class="img-fluid mb-4" style="max-width: 200px;">
                     <h1 class="display-4 fw-bold mb-4">About RoomRush</h1>
-                    <p class="lead mb-4">Connecting students and professionals with quality boarding houses since 2023</p>
+                    <p class="lead mb-4">RoomRush is a web-based booking platform designed to modernize student housing searches in Alaminos City, Pangasinan. Developed as an academic entrepreneurship project by students from [Your University], our solution addresses the critical need for an organized, transparent, and efficient system connecting students with verified boarding house accommodations.</p>
                 </div>
                 <div class="col-lg-6">
                     <img src="{{ asset('images/about-hero.jpg') }}" alt="About RoomRush" class="img-fluid rounded-3 shadow">
@@ -30,7 +30,7 @@
                                 <i class="fas fa-bullseye text-primary fa-2x"></i>
                             </div>
                             <h3>Our Mission</h3>
-                            <p class="text-muted">To provide a seamless and trustworthy platform connecting boarding house seekers with quality accommodations, ensuring a safe and comfortable living experience for everyone.</p>
+                            <p class="text-muted">"To empower PSU-Alaminos students with fast, safe, and transparent access to affordable boarding houses through a dedicated digital platform."</p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                                 <i class="fas fa-eye text-primary fa-2x"></i>
                             </div>
                             <h3>Our Vision</h3>
-                            <p class="text-muted">To be the leading platform for boarding house solutions in the Philippines, revolutionizing how people find their perfect home away from home.</p>
+                            <p class="text-muted">To become the premier digital housing solution for students in provincial universities across Northern Luzon by 2027.</p>
                         </div>
                     </div>
                 </div>
@@ -97,19 +97,47 @@
     <!-- Team Section -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Our Team</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+            <h2 class="text-center mb-5">Our Team</h2>            <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
                     <div class="card team-card border-0 shadow-sm">
                         <div class="card-body text-center p-4">
-                            <img src="{{ asset('images/team1.jpg') }}" alt="Team Member" class="rounded-circle mb-3" width="120">
-                            <h4>[Team Member Name]</h4>
-                            <p class="text-muted">[Position]</p>
-                            <p class="small">[Brief description about the team member's role and expertise]</p>
+                            <img src="{{ asset('images/team1.jpg') }}" alt="Marven M. Rosal" class="rounded-circle mb-3" width="120">
+                            <h4>Marven M. Rosal</h4>
+                            <p class="text-muted">Founder & CEO</p>
+                            <p class="small">Leading the vision and strategy of RoomRush, bringing innovative solutions to student housing challenges.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Add more team members as needed -->
+                <div class="col-md-3">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <img src="{{ asset('images/team2.jpg') }}" alt="Christian Rey C. Caasi" class="rounded-circle mb-3" width="120">
+                            <h4>Christian Rey C. Caasi</h4>
+                            <p class="text-muted">CTO</p>
+                            <p class="small">Driving technological innovation and platform development to ensure a seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <img src="{{ asset('images/team3.jpg') }}" alt="Kristine Joy C. Mallanao" class="rounded-circle mb-3" width="120">
+                            <h4>Kristine Joy C. Mallanao</h4>
+                            <p class="text-muted">COO</p>
+                            <p class="small">Overseeing daily operations and ensuring smooth coordination between landlords and students.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <img src="{{ asset('images/team4.jpg') }}" alt="Polinne Mari M. Rabina" class="rounded-circle mb-3" width="120">
+                            <h4>Polinne Mari M. Rabina</h4>
+                            <p class="text-muted">Chief Marketing Officer</p>
+                            <p class="small">Leading our marketing initiatives and building strong relationships with the PSU-ACC community.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -135,13 +163,30 @@
                                 <h5>Phone</h5>
                                 <p class="text-muted">(123) 456-7890</p>
                             </div>
-                        </div>
-                        <div class="col-md-4">
+                        </div>                        <div class="col-md-4">
                             <div class="contact-info">
                                 <i class="fas fa-map-marker-alt text-primary fa-2x mb-3"></i>
                                 <h5>Location</h5>
-                                <p class="text-muted">[Your Address]</p>
+                                <p class="text-muted">Pangasinan State University<br>Alaminos City Campus<br>Alaminos City, Pangasinan</p>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Links -->                    <div class="mt-5">
+                        <h5 class="mb-4">Connect With Us</h5>
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="https://www.facebook.com/profile.php?id=61576356086511" class="text-primary fs-4" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/roomrush" class="text-primary fs-4" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/roomrush" class="text-primary fs-4" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/roomrush" class="text-primary fs-4" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

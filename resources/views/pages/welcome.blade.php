@@ -11,14 +11,14 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center">
-    <div class="container text-center">
+    <section class="hero-section d-flex align-items-center min-vh-100">
+    <div class="container text-center py-5">
         <div class="brand-name mb-4">
-            <h1 class="display-2 fw-bold text-light">RoomRush</h1>
-            <p class="text-light opacity-75">Your Boarding House Solution</p>
+            <h1 class="display-2 fw-bold text-light mb-3">RoomRush</h1>
+            <p class="text-light opacity-75 fs-5">Your Boarding House Solution</p>
         </div>
-        <h2 class="display-4 fw-bold mb-4">Find Your Perfect Home Away From Home</h2>
-        <p class="lead mb-5">Discover comfortable and affordable boarding houses near you with RoomRush</p>
+        <h2 class="display-4 fw-bold mb-4 px-2">Find Your Perfect Home Away From Home</h2>
+        <p class="lead mb-5 px-3">Discover comfortable and affordable boarding houses near you with RoomRush</p>
         <div class="d-flex justify-content-center">
             <a href="{{ route('login') }}" class="btn btn-light btn-lg cta-button px-5">Get Started</a>
         </div>
@@ -27,9 +27,9 @@
 
     <!-- Features Section -->
     <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Why Choose RoomRush?</h2>
-            <div class="row g-4">
+        <div class="container px-4">
+            <h2 class="text-center mb-5 px-2">Why Choose RoomRush?</h2>
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-card card h-100 p-4">
                         <div class="text-primary mb-3">
@@ -75,15 +75,15 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
-                    <h2 class="display-4 fw-bold text-primary">500+</h2>
+                    <h2 class="display-4 fw-bold text-primary">50+</h2>
                     <p class="text-muted">Available Rooms</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <h2 class="display-4 fw-bold text-primary">1000+</h2>
+                    <h2 class="display-4 fw-bold text-primary">200+</h2>
                     <p class="text-muted">Happy Tenants</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <h2 class="display-4 fw-bold text-primary">50+</h2>
+                    <h2 class="display-4 fw-bold text-primary">5+</h2>
                     <p class="text-muted">Locations</p>
                 </div>
             </div>
@@ -92,9 +92,12 @@
 
     <!-- Testimonials Section -->
     <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">What Our Users Say</h2>
-            <div class="row">
+        <div class="container px-4">
+            <div class="text-center mb-4">
+                <img src="{{ asset('images/RoomRush Logo.png') }}" alt="RoomRush Logo" class="img-fluid mb-4" style="max-width: 150px;">
+            </div>
+            <h2 class="text-center mb-5 px-2">What Our Users Say</h2>
+            <div class="row gy-4">
                 <div class="col-md-4">
                     <div class="testimonial-card">
                         <div class="text-warning mb-3">
@@ -104,12 +107,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="mb-3">"Found my perfect room within a day! The process was so smooth and easy."</p>
+                        <p class="mb-3">"RoomRush helped me find the perfect boarding house near PSU-ACC! The search filters made it so easy to find exactly what I was looking for."</p>
                         <div class="d-flex align-items-center">
-                            <img src="{{ asset('images/avatar1.jpg') }}" alt="User" class="rounded-circle" width="50">
+                            <img src="{{ asset('images/jerome.png') }}" alt="Marven M. Rosal" class="rounded-circle" width="50" style="object-fit: cover;">
                             <div class="ms-3">
-                                <h6 class="mb-0">John Doe</h6>
-                                <small class="text-muted">Student</small>
+                                <h6 class="mb-0">Jerome Salcedo</h6>
+                                <small class="text-muted">PSU-ACC Student</small>
                             </div>
                         </div>
                     </div>
@@ -123,12 +126,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="mb-3">"Great platform! Made finding a boarding house near my workplace so much easier."</p>
+                        <p class="mb-3">"As a student in PSU-ACC, finding affordable accommodation was my top priority. RoomRush made it possible to compare options easily."</p>
                         <div class="d-flex align-items-center">
-                            <img src="{{ asset('images/avatar2.jpg') }}" alt="User" class="rounded-circle" width="50">
+                            <img src="{{ asset('images/jomar.png') }}" alt="Christian Rey C. Caasi" class="rounded-circle" width="50" style="object-fit: cover;">
                             <div class="ms-3">
-                                <h6 class="mb-0">Jane Smith</h6>
-                                <small class="text-muted">Professional</small>
+                                <h6 class="mb-0">Jomar Jacob</h6>
+                                <small class="text-muted">PSU-ACC Student</small>
                             </div>
                         </div>
                     </div>
@@ -142,12 +145,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="mb-3">"The verification process gives me peace of mind. Highly recommended!"</p>
+                        <p class="mb-3">"The platform is very user-friendly and the verified listings gave me confidence in choosing my boarding house. Great service!"</p>
                         <div class="d-flex align-items-center">
-                            <img src="{{ asset('images/avatar3.jpg') }}" alt="User" class="rounded-circle" width="50">
+                            <img src="{{ asset('images/myrick.png') }}" alt="Kristine Joy C. Mallanao" class="rounded-circle" width="50" style="object-fit: cover;">
                             <div class="ms-3">
-                                <h6 class="mb-0">Mike Johnson</h6>
-                                <small class="text-muted">Businessman</small>
+                                <h6 class="mb-0">Myrick Clemente</h6>
+                                <small class="text-muted">PSU-ACC Student</small>
                             </div>
                         </div>
                     </div>

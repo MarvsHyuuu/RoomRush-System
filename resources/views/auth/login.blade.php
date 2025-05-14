@@ -13,7 +13,7 @@
 <body>
     <div class="login-container d-flex align-items-center justify-content-center">
         <a href="{{ url('/') }}" class="back-to-home">
-            <i class="fas fa-arrow-left me-2"></i> Back to Home
+            <i class="fas fa-arrow-left me-2"></i> Back
         </a>
         <div class="container">
             <div class="row justify-content-center">

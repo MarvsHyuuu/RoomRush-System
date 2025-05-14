@@ -1,14 +1,15 @@
-
 @extends('layout.app')
 
 @section('title', 'Available Rooms - RoomRush')
 
-@section('content')
-    <!-- Search Section -->
+@section('content')    <!-- Search Section -->
     <section class="search-section py-5">
         <div class="container">
             <div class="card shadow-sm">
                 <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <img src="{{ asset('images/RoomRush Logo.png') }}" alt="RoomRush Logo" class="img-fluid" style="max-width: 200px;">
+                    </div>
                     <h4 class="mb-4">Find Your Perfect Room</h4>
                     <form action="{{ route('rooms') }}" method="GET">
                         <div class="row g-3">
@@ -75,7 +76,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card room-card h-100">
                         <div class="position-relative">
-                            <img src="{{ asset('images/room1.jpg') }}" class="card-img-top" alt="Solo Room">
+                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Solo Room">
                             <span class="badge bg-primary position-absolute top-0 end-0 m-3">Solo Room</span>
                         </div>
                         <div class="card-body">
@@ -87,17 +88,15 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Manila, Philippines</p>
+                                </div>                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>0.8km Away from PSU-ACC</p>
                             <div class="room-features mb-3">
                                 <span class="badge bg-light text-dark me-2"><i class="fas fa-wifi me-1"></i> Free WiFi</span>
                                 <span class="badge bg-light text-dark me-2"><i class="fas fa-air-conditioner me-1"></i> AC</span>
                                 <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i> Private Bath</span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="text-primary mb-0">₱3,500/month</h5>
-                                <a href="#" class="btn btn-outline-primary">View Details</a>
+                            <div class="d-flex justify-content-between align-items-center">                                <h5 class="text-primary mb-0">₱3,500/month</h5>
+                                <a href="{{ route('room.details', 'deluxe-solo') }}" class="btn btn-outline-primary">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +106,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card room-card h-100">
                         <div class="position-relative">
-                            <img src="{{ asset('images/room2.jpg') }}" class="card-img-top" alt="Bedspace">
+                            <img src="https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Bedspace">
                             <span class="badge bg-success position-absolute top-0 end-0 m-3">Bedspace</span>
                         </div>
                         <div class="card-body">
@@ -121,21 +120,49 @@
                                     <i class="far fa-star"></i>
                                 </div>
                             </div>
-                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Quezon City, Philippines</p>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>0.5km Away from PSU-ACC</p>
                             <div class="room-features mb-3">
                                 <span class="badge bg-light text-dark me-2"><i class="fas fa-wifi me-1"></i> Free WiFi</span>
                                 <span class="badge bg-light text-dark me-2"><i class="fas fa-fan me-1"></i> Fan</span>
                                 <span class="badge bg-light text-dark"><i class="fas fa-users me-1"></i> Shared Bath</span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="text-primary mb-0">₱2,000/month</h5>
-                                <a href="#" class="btn btn-outline-primary">View Details</a>
+                            <div class="d-flex justify-content-between align-items-center">                                <h5 class="text-primary mb-0">₱2,000/month</h5>
+                                <a href="{{ route('room.details', 'comfortable-bedspace') }}" class="btn btn-outline-primary">View Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Add more room cards as needed -->
+                <!-- Premium Solo Room Example -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card room-card h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Premium Room">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-3">Solo Room</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Premium Solo Room</h5>
+                                <div class="rating text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>1.5km Away from PSU-ACC</p>
+                            <div class="room-features mb-3">
+                                <span class="badge bg-light text-dark me-2"><i class="fas fa-wifi me-1"></i> Free WiFi</span>
+                                <span class="badge bg-light text-dark me-2"><i class="fas fa-air-conditioner me-1"></i> AC</span>
+                                <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i> Private Bath</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">                                <h5 class="text-primary mb-0">₱4,500/month</h5>
+                                <a href="{{ route('room.details', 'premium-solo') }}" class="btn btn-outline-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Pagination -->

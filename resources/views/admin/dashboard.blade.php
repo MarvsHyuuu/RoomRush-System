@@ -12,11 +12,12 @@
 
 </head>
 <body>
-    <div class="d-flex">
-        <!-- Sidebar -->
+    <div class="d-flex">        <!-- Sidebar -->
         <div class="sidebar">
             <div class="p-3">
-                <h3 class="mb-4">RoomRush</h3>
+                <div class="text-center mb-4">
+                    <img src="{{ asset('images/RoomRush Logo.png') }}" alt="RoomRush" class="img-fluid" style="max-width: 150px;">
+                </div>
                 <nav class="nav flex-column">
                     <a class="nav-link active" href="#"><i class="fas fa-dashboard me-2"></i>Dashboard</a>
                     <a class="nav-link" href="#"><i class="fas fa-building me-2"></i>Rooms</a>
