@@ -4,7 +4,11 @@
 }
 
 .hero-section {
-    background: linear-gradient(rgba(26, 115, 232, 0.9), rgba(66, 133, 244, 0.9)), url('../images/hero-bg.jpg');
+    background: linear-gradient(
+            rgba(26, 115, 232, 0.9),
+            rgba(66, 133, 244, 0.9)
+        ),
+        url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -34,8 +38,11 @@
 }
 
 .hero-section {
-    background: linear-gradient(rgba(26, 115, 232, 0.8), rgba(66, 133, 244, 0.8)), 
-                url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3');
+    background: linear-gradient(
+            rgba(26, 115, 232, 0.8),
+            rgba(66, 133, 244, 0.8)
+        ),
+        url("https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3");
     background-size: cover;
     background-position: center;
     min-height: 80vh;
@@ -87,4 +94,85 @@
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-section {
+        min-height: 60vh;
+        padding: 60px 0;
+        margin-top: 60px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .featured-card .card-img-top,
+    .location-img {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 50vh;
+        padding: 40px 0;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .featured-card .card-img-top,
+    .location-img {
+        height: 180px !important;
+    }
+
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 3rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 40vh;
+        padding: 30px 0;
+    }
+
+    .display-4 {
+        font-size: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .featured-card .card-img-top,
+    .location-img {
+        height: 160px !important;
+    }
 }

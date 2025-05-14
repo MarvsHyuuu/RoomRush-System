@@ -15,12 +15,12 @@
         <a href="{{ url('/') }}" class="back-to-home">
             <i class="fas fa-arrow-left me-2"></i> Back
         </a>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-5">
+        <div class="container">            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
                     <div class="card">
                         <div class="card-body p-5">
-                            <div class="text-center">
+                            <div class="logo-container">
+                                <img src="{{ asset('images/RoomRush Logo.png') }}" alt="RoomRush" class="img-fluid">
                                 <h3 class="mb-4">Welcome Back!</h3>
                             </div>
                             @if(session('error'))

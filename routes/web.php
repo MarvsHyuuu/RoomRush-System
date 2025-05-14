@@ -7,8 +7,15 @@ use App\Http\Controllers\AuthController;
 
 // Public Routes
 Route::get('/', function () {
-    return view('pages.welcome');
-})->name('welcome');
+    return view('pages.index');
+})->name('landing');
+
+Route::get('/home', function () {
+    if (!Session::has('logged_in')) {
+        return redirect('login');
+    }
+    return view('pages.home');
+})->name('home');
 
 // Auth Routes
 Route::get('/login', [AuthController::class, 'login'])->name('login');
@@ -30,28 +37,48 @@ Route::group(['middleware' => 'web'], function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 
-    Route::get('/home', function () {
+    Route::get('/dashboard', function () {
         if (!Session::has('logged_in')) {
             return redirect('login');
         }
-        return view('pages.home');
-    })->name('home');
+        if (Session::get('user_type') === 'admin') {
+            return redirect()->route('admin.dashboard');
+        }
+        return view('pages.customer-dashboard');
+    })->name('dashboard');
 
     Route::get('/rooms', function () {
+        if (!Session::has('logged_in')) {
+            return redirect('login');
+        }
         return view('pages.rooms');
     })->name('rooms');
 
-    Route::get('/rooms/{id}', [App\Http\Controllers\RoomController::class, 'show'])->name('room.details');
+    Route::get('/rooms/{id}', function($id) {
+        if (!Session::has('logged_in')) {
+            return redirect('login');
+        }
+        return app()->make(App\Http\Controllers\RoomController::class)->show($id);
+    })->name('room.details');
 
     Route::get('/about', function () {
+        if (!Session::has('logged_in')) {
+            return redirect('login');
+        }
         return view('pages.about');
     })->name('about');
 
     Route::get('/contact', function () {
+        if (!Session::has('logged_in')) {
+            return redirect('login');
+        }
         return view('pages.contact');
     })->name('contact');
 
     Route::get('/terms', function () {
+        if (!Session::has('logged_in')) {
+            return redirect('login');
+        }
         return view('pages.terms');
     })->name('terms');
 });

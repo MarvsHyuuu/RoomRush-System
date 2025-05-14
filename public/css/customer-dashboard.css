@@ -1,0 +1,143 @@
+/* Customer Dashboard Styles */
+.customer-dashboard {
+    margin-top: 80px;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 80px);
+}
+
+.dashboard-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.user-info img {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+}
+
+/* Card Styles */
+.dashboard-card {
+    transition: transform 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon Box */
+.icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Table Styles */
+.table th {
+    font-weight: 600;
+    border-top: none;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Notification Styles */
+.notification-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    transition: background-color 0.3s;
+}
+
+.notification-item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+}
+
+.btn-outline-primary {
+    border-color: #1a73e8;
+    color: #1a73e8;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+/* Badge Styles */
+.badge {
+    padding: 0.5em 0.8em;
+    border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-dashboard {
+        margin-top: 60px;
+    }
+
+    .dashboard-logo {
+        max-width: 120px;
+    }
+
+    .user-info {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .notification-list {
+        max-height: 250px;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+    }
+}

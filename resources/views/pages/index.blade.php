@@ -7,7 +7,7 @@
     <title>Welcome to RoomRush</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 </head>
 <body>
     <!-- Hero Section -->
@@ -164,7 +164,7 @@
         <div class="container text-center">
             <h2 class="mb-4">Ready to Find Your New Home?</h2>
             <p class="mb-4">Join thousands of happy tenants who found their perfect boarding house with RoomRush</p>
-            <a href="{{ route('register') }}" class="btn btn-light btn-lg cta-button">Get Started Now</a>
+            <a href="{{ route('login') }}" class="btn btn-light btn-lg cta-button">Get Started Now</a>
         </div>
     </section>
 
